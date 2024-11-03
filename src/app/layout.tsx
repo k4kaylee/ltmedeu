@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import Header from "./components/common/Header";
+import Footer from "./components/common/Footer";
 
 export const metadata: Metadata = {
   title: "Under reconstruction",
@@ -43,11 +44,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${gilroy.variable} antialiased flex flex-col items-center`}
+        className={`${gilroy.variable} antialiased overflow-x-hidden`}
       >
-        <div className='max-w-[83rem] mx-6'>
+        <div className='mx-6 flex flex-col items-center'>
           <Header />
           {children}
+          <Footer />
         </div>
       </body>
     </html>

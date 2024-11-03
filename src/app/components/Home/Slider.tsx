@@ -5,7 +5,7 @@ import SliderSelectors from './SliderSelectors'
 
 function Slider() {
     return (
-        <div className='rounded relative'>
+        <div className='rounded relative max-w-[83rem]'>
             <Image src={SeniorLady} alt='A senior lady monitoring data' className='rounded-3xl' />
             <div className='bg-black bg-opacity-50 absolute top-0 h-full w-full rounded-3xl text-white flex flex-col items-center justify-center pt-12 space-y-14'>
                 <h1 className='text-7xl font-semibold'>Welcome to LTMed</h1>
